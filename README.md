@@ -19,3 +19,6 @@ Make sure you have Node.js and npm installed on your machine.
 
 # Install dependencies
 npm install
+
+# Run the development server
+npm start
