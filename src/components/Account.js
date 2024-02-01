@@ -1,5 +1,3 @@
-// src/components/Account.js
-
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { selectUser } from '../redux/userSlice';
@@ -10,10 +8,12 @@ const Account = () => {
   const [isEditModalOpen, setEditModalOpen] = useState(false);
 
   const openEditModal = () => {
+    //Logic to open modal
     setEditModalOpen(true);
   };
 
   const closeEditModal = () => {
+    //Logic to close modal
     setEditModalOpen(false);
   };
 

@@ -1,4 +1,3 @@
-// src/components/Register.js
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { login } from '../redux/authSlice';
@@ -13,7 +12,6 @@ const Register = () => {
   const navigate = useNavigate();
 
   const handleRegister = () => {
-    // Simulate registration logic
     // After successful registration, dispatch login to set isAuthenticated to true
     dispatch(login());
     dispatch(setUser({ username, email, password }));

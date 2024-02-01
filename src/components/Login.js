@@ -10,8 +10,7 @@ const Login = () => {
   const navigate = useNavigate();
   const user = useSelector((store) => store.user);
 
-  const handleLogin = () => {
-    // Simulate authentication logic
+  const handleLogin = () => {  
     if (username === user.username && password === user.password) {
       dispatch(login());
       navigate('/account');

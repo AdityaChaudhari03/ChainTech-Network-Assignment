@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { updateProfile, selectUser, setUser } from '../redux/userSlice';
+import { selectUser, setUser } from '../redux/userSlice';
 
 const EditAccountModal = ({ isOpen, onClose }) => {
   const dispatch = useDispatch();
@@ -8,9 +8,10 @@ const EditAccountModal = ({ isOpen, onClose }) => {
   const [editedUser, setEditedUser] = useState({ username: user?.username, email: user?.email });
 
   const handleSaveChanges = () => {
-    // Add logic to save changes and dispatch updateProfile action
+    //logic to save changes and dispatch updateProfile action
     dispatch(setUser(editedUser));
-    onClose(); // Close the modal
+    // Close the modal
+    onClose();  
   };
 
   return (
